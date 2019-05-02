@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Registro;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
 
 class RegistroController extends Controller
 {
@@ -12,9 +13,9 @@ class RegistroController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+   public function index()
     {
-        //
+        return \View::make('home');
     }
 
     /**
@@ -35,7 +36,57 @@ class RegistroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $client = new Registro;
+     
+        $v = \Validator::make($request->all(), [
+            
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'cliente' => 'required|unique:registros',
+            'telefono' => 'required',
+            'correo'    => 'required|email|unique:registros',
+            'estado' => 'required',
+            'cp' => 'required',
+            'titular' => 'required'
+        ]);
+ 
+        if ($v->fails()){
+            return redirect()->back()->withInput()->withErrors($v->errors());
+        }
+        
+        $client->create($request->all());
+
+        if (isset($client->id)){
+            $salida = 'Éxito al guardar';
+        }else{
+            $salida = 'Error al guardar';
+        }
+
+
+        //return $salida;
+
+        $datos = array(
+            'sucess' => 'true',
+            'guardado' => $salida,
+        );
+
+        $receptor = array(
+            'nombre' => $request->input('nombre'),
+            'correo' => $request->input('correo'),
+        );
+
+        
+
+        \Mail::send('mail.registro', $receptor , function($message) use ($receptor) {
+        $message->to($receptor['correo'], $receptor['nombre'] )->subject('Gracias por Registrarte');
+
+         });    
+
+
+        //echo json_encode($datos, JSON_FORCE_OBJECT);
+
+        return view('home',compact('datos'));
     }
 
     /**

@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'RegistroController@index');
 
 
 Route::get('/bases', function () {
     return view('bases');
 });
+
+
+Route::post('/registroNuevo', 'RegistroController@store');
