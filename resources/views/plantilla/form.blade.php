@@ -1,4 +1,15 @@
+<!--div class="bs-callout bs-callout-warning hidden">
+  <h4>Oh snap!</h4>
+  <p>This form seems to be invalid :(</p>
+</div>
+
+<div class="bs-callout bs-callout-info hidden">
+  <h4>Yay!</h4>
+  <p>Everything seems to be ok :)</p>
+</div-->
+
 <div class="form-home">
+
     <div class="content">
         <div class="title">
             <h2>Suscríbete y participa</h2>
@@ -24,22 +35,45 @@
 
 
 
-            <form action="{{ url('registroNuevo') }}" method="POST">
+            <form action="{{ url('registroNuevo') }}" method="POST" id="registro" data-parsley-validate="">
                 @csrf
 
-                <p>Nombre: <br> <input type="text" name="nombre"></p>
-                <p>Apellido: <br> <input type="text" name="apellido"></p>
-                <p>Número de cliente: <br> <input type="text" name="cliente"></p>
+                <div class="form-section">
+                <p>Nombre: <br> <input type="text" name="nombre" required="" data-parsley-length="[3, 20]"></p>
+                </div>
+
+                <p>Apellido: <br> <input type="text" name="apellido" required="" data-parsley-length="[3, 20]"></p>
+
+                <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number"></p>
+
                 <p class="space"><br></p>
-                <p>Teléfono: <br> <input type="text" name="telefono"></p>
-                <p>Correo electrónico: <br> <input type="text" name="correo"></p>
-                <p>Estado: <br> <input type="text" name="estado"></p>
-                <p>Código postal: <br> <input type="text" name="cp"></p>
-                <p><input type="check" name="titular" value="yes" class="radio">¿Es usted titular de la cuenta?</p>
+
+                <p>Teléfono: <br> <input type="text" name="telefono" required=""></p>
+
+                <p>Correo electrónico: <br> <input name="correo" required="" type="email" data-parsley-type="email"></p>
+
+                <p>Estado: <br> <input type="text" name="estado" required="" ></p>
+
+                <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5"  data-parsley-minlength="5"></p>
+
+
+                    <p>
+    <input type="checkbox" class="radio" id="titular" name="titular" value="yes" required="">
+    <label class="form-check-label" for="titular">¿Es usted titular de la cuenta?</label>
+
+                    </p>
+
                 <p class="space"><br></p>
+
                 <div class="button"><input type="submit" value="Suscribirme" class="button-x"></div>
+
             </form>
         </div>
         <div class="clearfix"></div>
     </div>
 </div>
+
+ <div id="overlay">
+    <img src="{{ asset('clientlibs/img/cargando.gif') }}">
+    <div id="text">Estamos validando tus datos</div>
+</div> 

@@ -15,6 +15,10 @@
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery.min.js') }}">   </script>
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery-ui.min.js') }}"></script>
 
+        <!-- parsley -->
+        <script src="{{ asset('clientlibs/jQuery/parsley.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('/css/parsley.css') }}"/>
+
         <!-- B A S E -->
         <link rel="stylesheet" href="{{ asset('clientlibs/fontawesome/v.4.7.0/font-awesome.min.css') }}"/>
         <link rel="stylesheet" href="{{ asset('clientlibs/css/styles.css') }}"/>
@@ -36,5 +40,22 @@
                  @yield('content')
 
             </div>
+<script type="text/javascript">  
+$(function () {
+  $('#registro').parsley().on('field:validated', function() {
+    var ok = $('.parsley-error').length === 0;
+    $('.bs-callout-info').toggleClass('hidden', !ok);
+    $('.bs-callout-warning').toggleClass('hidden', ok);
+  })
+  .on('form:submit', function() {
+    //return false; // Don't submit form for this demo
+    document.getElementById("overlay").style.display = "block";
+
+    $('html, body').animate({
+      scrollTop: $("#registro").offset().top
+    }, 1500);
+  });
+});
+</script>            
     </body>
 </html>
