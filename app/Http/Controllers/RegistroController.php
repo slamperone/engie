@@ -57,7 +57,7 @@ class RegistroController extends Controller
         
         $client->create($request->all());
 
-        if (isset($client->id)){
+        if ($client){
             $salida = 'Éxito al guardar';
         }else{
             $salida = 'Error al guardar';

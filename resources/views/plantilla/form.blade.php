@@ -18,7 +18,7 @@
         @if(isset($datos))
 
            <div class="alert alert-warning" role="alert">
-                  <div>{{ $datos->guardado }}</div>
+                  <div>{{ $datos['guardado'] }}</div>
             </div>
          @endif </br>
 
