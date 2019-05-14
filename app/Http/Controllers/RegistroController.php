@@ -41,13 +41,13 @@ class RegistroController extends Controller
      
         $v = \Validator::make($request->all(), [
             
-            'nombre' => 'required',
-            'apellido' => 'required',
+            'nombre' => 'required|alpha_num|max:40',
+            'apellido' => 'required|alpha_num|max:40',
             'cliente' => 'required|unique:registros',
-            'telefono' => 'required',
+            'telefono' => 'required|numeric',
             'correo'    => 'required|email|unique:registros',
-            'estado' => 'required',
-            'cp' => 'required',
+            'estado' => 'required|alpha_num|max:40',
+            'cp' => 'required|numeric|max:5',
             'titular' => 'required'
         ]);
  

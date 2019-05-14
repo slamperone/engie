@@ -18,5 +18,17 @@ Route::get('/bases', function () {
     return view('bases');
 });
 
+Route::get('/instrucciones', function () {
+    return view('inst');
+});
+
+Route::get('/premios', function () {
+    return view('premios');
+});
+
+Route::get('/faqs', function () {
+    return view('faqs');
+});
+
 
 Route::post('/registroNuevo', 'RegistroController@store');
