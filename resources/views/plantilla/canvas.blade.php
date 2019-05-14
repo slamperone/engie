@@ -1,3 +1,4 @@
+
 <!----------------------->
 <!-- O F F C A N V A S -->
 <!----------------------->
@@ -10,7 +11,7 @@
     </a>
     <a href="#">
         <div class="logo-offcanvas">
-            <div class="logo"><img src="{{ asset('clientlibs/img/engie.png') }}" alt="Engie"></div>
+            <div class="logo"><img src="clientlibs/img/engie.png" alt="Engie"></div>
         </div>
     </a>
     <ul class="option-offcanvas">

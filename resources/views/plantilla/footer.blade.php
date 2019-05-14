@@ -2,19 +2,22 @@
     <div class="content">
         <div class="footer-logo">
             <div class="photo">
-                <img src="{{ asset('clientlibs/img/engie.png') }}" alt="Engie">
+                <a href="{{url('/') }}">
+                    <div class="logo"><img src="{{ asset('clientlibs/img/engie.png') }}" alt="Engie"></div>
+                </a>
             </div>
         </div>
         <div class="footer-izq">
             <p>Copyright © 2019, todos los derechos reservados</p>
         </div>
-        <div class="footer-der">
+          <div class="footer-der">
             <div class="menu">
                 <ul>
-                    <!--<li class="btn"><a href="#">Instrucciones I</a></li>-->
-                    <!--<li class="btn"><a href="#">Premios I</a></li>-->
-                    <li class="btn"><a href="02-bases.php">Conoce las bases</a></li>
-                    <!--<li class="btn"><a href="#">Terminos y Condiciones</a></li>-->
+                    <li class="btn"><a href="{{url('/') }}">Inicio I</a></li>
+                    <li class="btn"><a href="{{url('/instrucciones') }}">Instrucciones I</a></li>
+                    <li class="btn"><a href="{{url('/premios') }}">Premios I</a></li>
+                    <li class="btn"><a href="{{url('/bases') }}">Bases I</a></li>
+                    <li class="btn"><a href="{{url('/faqs') }}">Faqs</a></li>
                     <div class="clearfix"></div>
                 </ul>
             </div>
