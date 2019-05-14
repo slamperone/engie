@@ -39,22 +39,22 @@
                 @csrf
 
                 <div class="form-section">
-                <p>Nombre: <br> <input type="text" name="nombre" required="" data-parsley-length="[3, 20]"></p>
+                <p>Nombre: <br> <input type="text" name="nombre" required="" data-parsley-length="[3, 20]" value="{{ old('nombre') }}"> </p>
                 </div>
 
-                <p>Apellido: <br> <input type="text" name="apellido" required="" data-parsley-length="[3, 20]"></p>
+                <p>Apellido: <br> <input type="text" name="apellido" required="" data-parsley-length="[3, 20]" value="{{ old('apellido') }}"></p>
 
-                <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number"></p>
+                <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number" value="{{ old('cliente') }}"></p>
 
                 <p class="space"><br></p>
 
-                <p>Teléfono: <br> <input type="text" name="telefono" required=""></p>
+                <p>Teléfono: <br> <input type="text" name="telefono" required="" value="{{ old('telefono') }}"></p>
 
-                <p>Correo electrónico: <br> <input name="correo" required="" type="email" data-parsley-type="email"></p>
+                <p>Correo electrónico: <br> <input name="correo" required="" type="email" data-parsley-type="email" value="{{ old('correo') }}"></p>
 
-                <p>Estado: <br> <input type="text" name="estado" required="" ></p>
+                <p>Estado: <br> <input type="text" name="estado" required="" value="{{ old('estado') }}"></p>
 
-                <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5"  data-parsley-minlength="5"></p>
+                <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5"  data-parsley-minlength="5" value="{{ old('cp') }}"></p>
 
 
                     <p>

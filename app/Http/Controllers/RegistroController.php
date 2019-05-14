@@ -47,7 +47,7 @@ class RegistroController extends Controller
             'telefono' => 'required|numeric',
             'correo'    => 'required|email|unique:registros',
             'estado' => 'required|alpha_num|max:40',
-            'cp' => 'required|numeric|max:5',
+            'cp' => 'required|numeric|max:99999',
             'titular' => 'required'
         ]);
  
@@ -74,6 +74,7 @@ class RegistroController extends Controller
         $receptor = array(
             'nombre' => $request->input('nombre'),
             'correo' => $request->input('correo'),
+            'folio' => md5($client->id),
         );
 
         

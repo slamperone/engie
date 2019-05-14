@@ -10,7 +10,7 @@
 		<img src="https://engietepremia.com.mx/clientlibs/img/engie.png" width="200">
 	</div>
 	<h2 style="margin: 20px 0 60px; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 20px;">Hola {{ $nombre }}, gracias por registrarte en <strong>ENGIE te premia</strong></h2>    
-    <p style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">Al ser este un email de confirmación no es necesario que lo respondas te deseamos ¡Mucha suerte"</p>
+    <p style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">Tu numero de folio es: <b>{{ $folio }}</b>, debes conservarlo para reclamar tu premio. <br />Al ser este un email de confirmación no es necesario que lo respondas te deseamos ¡Mucha suerte"</p>
 </div>
 
 </body>
