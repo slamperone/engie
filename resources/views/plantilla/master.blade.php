@@ -15,6 +15,7 @@
 
         <!-- parsley -->
         <script src="{{ asset('clientlibs/jQuery/parsley.js') }}"></script>
+        <script src="{{ asset('clientlibs/jQuery/es.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('/css/parsley.css') }}"/>
 
         <!-- B A S E -->
@@ -30,7 +31,9 @@
                  @yield('content')
 
             </div>
-<script type="text/javascript">  
+<script type="text/javascript">
+window.ParsleyValidator.setLocale('es');
+
 $(function () {
   $('#registro').parsley().on('field:validated', function() {
     var ok = $('.parsley-error').length === 0;
