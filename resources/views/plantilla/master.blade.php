@@ -32,9 +32,25 @@
 
             </div>
 <script type="text/javascript">
+
+    
 window.ParsleyValidator.setLocale('es');
 
 $(function () {
+
+
+    $('#concurso').on('click', function(event) {
+        var target = $('.form-home');
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+
+
   $('#registro').parsley().on('field:validated', function() {
     var ok = $('.parsley-error').length === 0;
     $('.bs-callout-info').toggleClass('hidden', !ok);

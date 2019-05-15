@@ -21,7 +21,8 @@
             <div class="content-02">
                 <ul>
                     <li class="btn"><a href="{{url('/') }}">Inicio</a></li>
-                    <li class="btn"><a href="{{url('instrucciones') }}">Instrucciones</a></li>
+                    <!--li class="btn"><a href="{{url('instrucciones') }}">Instrucciones</a></li-->
+                    <li class="btn"><a href="#" id="concurso">Concurso</a></li>
                     <li class="btn"><a href="{{url('premios') }}">Premios</a></li>
                     <li class="btn"><a href="{{url('bases') }}">Bases</a></li>
                     <li class="btn"><a href="{{url('faqs') }}">Faqs</a></li>
