@@ -30,5 +30,13 @@ Route::get('/faqs', function () {
     return view('faqs');
 });
 
+Route::get('/concurso', function () {
+    return view('concurso');
+});
+
+Route::get('/terminos-y-condiciones', function () {
+    return view('terminos');
+});
+
 
 Route::post('/registroNuevo', 'RegistroController@store');

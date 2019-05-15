@@ -22,7 +22,13 @@
                 <ul>
                     <li class="btn"><a href="{{url('/') }}">Inicio</a></li>
                     <!--li class="btn"><a href="{{url('instrucciones') }}">Instrucciones</a></li-->
-                    <li class="btn"><a href="#" id="concurso">Concurso</a></li>
+
+                    @if(Request::path() == '/' || Request::path() == '/concurso')
+                        <li class="btn"><a href="#" id="concurso">Concurso</a></li>
+                    @else
+                        <li class="btn"><a href="{{url('concurso') }}" id="concurso">Concurso</a></li>
+                    @endif    
+                    
                     <li class="btn"><a href="{{url('premios') }}">Premios</a></li>
                     <li class="btn"><a href="{{url('bases') }}">Bases</a></li>
                     <li class="btn"><a href="{{url('faqs') }}">Faqs</a></li>

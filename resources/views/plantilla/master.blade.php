@@ -12,6 +12,9 @@
         <!-- G N R L -->
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery.min.js') }}">   </script>
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery-ui.min.js') }}"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
         <!-- parsley -->
         <script src="{{ asset('clientlibs/jQuery/parsley.js') }}"></script>
@@ -31,6 +34,20 @@
                  @yield('content')
 
             </div>
+
+
+
+
+<!-- Modal Structure -->
+    <div class="modal fade" id="myModal" aria-hidden="true">
+
+        olabb
+ </div>
+
+
+
+
+
 <script type="text/javascript">
 
     
@@ -51,20 +68,42 @@ $(function () {
 
 
 
-  $('#registro').parsley().on('field:validated', function() {
+  /*$('#registro').parsley().on('field:validated', function() {
     var ok = $('.parsley-error').length === 0;
     $('.bs-callout-info').toggleClass('hidden', !ok);
     $('.bs-callout-warning').toggleClass('hidden', ok);
-  })
-  .on('form:submit', function() {
-    //return false; // Don't submit form for this demo
-    document.getElementById("overlay").style.display = "block";
 
-    $('html, body').animate({
-      scrollTop: $("#registro").offset().top
-    }, 1500);
-  });
-});
+    $('.modal').toggleClass('modal--show');
+
+    console.log('¡válido!');
+
+  })
+  .on('form:submit', function(e) {
+    //return false; // Don't submit form for this demo
+
+    return false;
+
+    
+    });*/
+
+    $("#registro").on('submit', function(e){
+            e.preventDefault();
+            var form = $(this);
+
+            form.parsley().validate();
+
+            if (form.parsley().isValid()){
+                
+
+                $('#myModal').modal('show')
+
+
+
+            }//is valid
+        });
+
+
+});  
 </script>            
     </body>
 </html>

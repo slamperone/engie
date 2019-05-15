@@ -135,7 +135,8 @@
 
                     </p>
 
-                <p class="space"><br></p>
+                <p><input type="checkbox" class="radio" id="condiciones" name="condiciones" value="yes" required="">
+    <label class="form-check-label" for="titular"><a href="{{url('terminos-y-condiciones') }}" target="_blank">Acepto términos y condiciones</a></label></p>
 
                 <input type="submit" name="" value="Participa" class="btn">
 
