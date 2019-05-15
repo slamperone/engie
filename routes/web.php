@@ -38,5 +38,10 @@ Route::get('/terminos-y-condiciones', function () {
     return view('terminos');
 });
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    // return what you want
+});
+
 
 Route::post('/registroNuevo', 'RegistroController@store');

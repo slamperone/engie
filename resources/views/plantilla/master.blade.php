@@ -12,19 +12,18 @@
         <!-- G N R L -->
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery.min.js') }}">   </script>
         <script src="{{ asset('clientlibs/jQuery/v.1.12.4/jquery-ui.min.js') }}"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
 
 
         <!-- parsley -->
         <script src="{{ asset('clientlibs/jQuery/parsley.js') }}"></script>
         <script src="{{ asset('clientlibs/jQuery/es.js') }}"></script>
-        <link rel="stylesheet" href="{{ asset('/css/parsley.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/parsley.css') }}"/>
 
         <!-- B A S E -->
         <link rel="stylesheet" href="{{ asset('clientlibs/fontawesome/v.4.7.0/font-awesome.min.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('clientlibs/css/styles.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('clientlibs/css/estilo.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/estilo.css') }}"/>
         <script src="{{ asset('clientlibs/scripts/header/script.js') }}"></script>
 
     </head>
