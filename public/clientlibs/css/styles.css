@@ -361,7 +361,7 @@ header .content .content-wrapper ul li.btn a:hover {
   float: left;
   height: 60px;
 }
-.form-home .content .form input {
+.form-home .content .form input, .slcEstados {
   width: 90%;
   float: left;
   padding: 10px;
