@@ -399,9 +399,7 @@ header .content .content-wrapper ul li.btn a:hover {
   width: 100%;
   height: 100%;
 }
-.modal {
-  visibility: hidden;
-}
+
 .modal__contents {
   width: 32%;
   background-color: #f2f2f2;
@@ -419,10 +417,10 @@ header .content .content-wrapper ul li.btn a:hover {
   text-decoration: none;
   display: none;
 }
-.modal__contents .title {
+#encuesta .title {
   text-align: center;
 }
-.modal__contents .title h2 {
+#encuesta .title h2 {
   font-size: 54px;
   line-height: 60px;
   font-weight: normal;
@@ -430,25 +428,25 @@ header .content .content-wrapper ul li.btn a:hover {
   padding-bottom: 0;
   margin-bottom: 10px;
 }
-.modal__contents .title .line {
+#encuesta .title .line {
   width: 150px;
   height: 5px;
   background-color: #e62d8f;
   margin: 0 auto 30px auto;
 }
-.modal__contents .form {
+#encuesta .form {
   background-color: #ffffff;
   padding: 30px 50px;
   border-radius: 20px;
 }
-.modal__contents .form h2 {
+#encuesta .form h2 {
   color: #666666;
   font-size: 18px;
 }
-.modal__contents .form p {
+#encuesta .form p {
   color: #666666;
 }
-.modal__contents .form .btn {
+#encuesta .form .btn {
   width: 90%;
   float: left;
   padding: 15px;
@@ -462,26 +460,7 @@ header .content .content-wrapper ul li.btn a:hover {
   border-radius: 10px;
   text-decoration: none;
 }
-.modal--show {
-  visibility: visible;
-}
-.modal--transition {
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.modal--show .modal--transition {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-}
+
 .bases {
   width: 100%;
   display: inline-block;

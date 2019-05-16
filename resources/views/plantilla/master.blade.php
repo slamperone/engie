@@ -20,6 +20,11 @@
         <script src="{{ asset('clientlibs/jQuery/es.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('css/parsley.css') }}"/>
 
+
+        <!-- Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
         <!-- B A S E -->
         <link rel="stylesheet" href="{{ asset('clientlibs/fontawesome/v.4.7.0/font-awesome.min.css') }}"/>
         <link rel="stylesheet" href="{{ asset('clientlibs/css/styles.css') }}"/>
@@ -94,7 +99,12 @@ $(function () {
             if (form.parsley().isValid()){
                 
 
-                $('#myModal').modal('show')
+               $("#encuesta").modal({
+                    escapeClose: false,
+                    clickClose: false,
+                    showClose: false,
+                    fadeDuration: 100
+        });
 
 
 

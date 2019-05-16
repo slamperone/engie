@@ -95,17 +95,17 @@
 
 <option value="Nayarit">Nayarit</option>
 
-<option value="Nuevo León">Nuevo León</option>
+<option value="Nuevo Leon">Nuevo León</option>
 
 <option value="Oaxaca">Oaxaca</option>
 
 <option value="Puebla">Puebla</option>
 
-<option value="Querétaro">Querétaro</option>
+<option value="Queretaro">Querétaro</option>
 
 <option value="Quintana Roo">Quintana Roo</option>
 
-<option value="San Luis Potosí">San Luis Potosí</option>
+<option value="San Luis Potosi">San Luis Potosí</option>
 
 <option value="Sinaloa">Sinaloa</option>
 
@@ -119,7 +119,7 @@
 
 <option value="Veracruz">Veracruz de Ignacio de la Llave</option>
 
-<option value="Yucatán">Yucatán</option>
+<option value="Yucatan">Yucatán</option>
 
 <option value="Zacatecas">Zacatecas</option>
 
@@ -135,13 +135,17 @@
                     </p>
 
     <p class="che">
-                  <input type="checkbox" class="radio" id="condiciones" name="condiciones" value="yes" required="">
-    <label class="form-check-label" for="titular">&nbsp; Acepto <a href="{{url('aviso-de-privacidad') }}" target="_blank">Aviso de Privacidad</a></label></p>
+                  <input type="checkbox" class="radio" id="condiciones" name="aviso" value="yes" required="">
+    <label class="form-check-label" for="aviso">&nbsp; Acepto <a href="{{url('aviso-de-privacidad') }}" target="_blank">Aviso de Privacidad</a></label></p>
 
                     
 
                 
                 <input type="submit" name="" value="Participa" class="btn">
+
+                <input type="hidden" name="p1" value="">
+                <input type="hidden" name="p2" value="">
+                <input type="hidden" name="p3" value="">
 
             </form>
         </div>
@@ -149,7 +153,28 @@
     </div>
 </div>
 
- <div id="overlay">
-    <img src="{{ asset('clientlibs/img/cargando.gif') }}">
-    <div id="text">Estamos validando tus datos</div>
-</div> 
+
+<div id="encuesta" class="modal">
+
+<div class="title">
+<h2>Trivia</h2>
+<div class="line"></div>
+</div>
+<div class="form">
+<h2>1. ¿Que servicio te ofrece Engie?</h2>
+<p><input type="radio" name="agua" value="agua" class="radio">Agua potable</p>
+<p><input type="radio" name="energia" value="energia" class="radio">Energía eléctrica</p>
+<p><input type="radio" name="gas" value="gas" class="radio">Gas natural</p>
+<h2>2. ¿De qué color es el logo de ENGIE?</h2>
+<p><input type="radio" name="agua" value="agua" class="radio">Rojo</p>
+<p><input type="radio" name="energia" value="energia" class="radio">Azul</p>
+<p><input type="radio" name="gas" value="gas" class="radio">Amarillo</p>
+<h2>3. ¿El gas natural nos sirve para?</h2>
+<p><input type="radio" name="agua" value="agua" class="radio">Navegar en internet</p>
+<p><input type="radio" name="energia" value="energia" class="radio">Cocinar en la estufa</p>
+<p><input type="radio" name="gas" value="gas" class="radio">Cargar el móvil</p>
+<a class="btn" href="#">Enviar</a>
+<div class="clearfix"></div>
+</div>
+</div>
+
