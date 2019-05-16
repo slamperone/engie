@@ -48,7 +48,10 @@ class RegistroController extends Controller
             'correo'    => 'required|email|unique:registros',
             'estado' => 'required|alpha_num|max:40',
             'cp' => 'required|numeric|max:99999',
-            'titular' => 'required'
+            'titular' => 'required',
+            'p1' => 'required',
+            'p2' => 'required',
+            'p3' => 'required'
         ]);
  
         if ($v->fails()){

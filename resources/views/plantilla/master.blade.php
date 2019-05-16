@@ -112,6 +112,37 @@ $(function () {
         });
 
 
+    $('.p1').click(function() {
+        if ($('.p1').is(":checked"))
+            {
+            console.log($(this).val());
+
+            $('#preguta1').val() = $('.p1').val($(this).val());
+            }
+    });
+
+    $('.p2').click(function() {
+        if ($('.p2').is(":checked"))
+            {
+            console.log($(this).val());
+            $('#preguta1').val() = $('.p2').val($(this).val());
+            }
+    });
+
+    $('.p3').click(function() {
+        if ($('.p3').is(":checked"))
+            {
+            console.log($(this).val());
+            $('#preguta1').val() = $('.p3').val($(this).val());
+
+            }
+    });
+
+    $('#guardaTodo').click(function() {
+        $('registro').submit();
+    });
+
+
 });  
 </script>            
     </body>

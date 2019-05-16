@@ -143,9 +143,9 @@
                 
                 <input type="submit" name="" value="Participa" class="btn">
 
-                <input type="hidden" name="p1" value="agua">
-                <input type="hidden" name="p2" value="rojo">
-                <input type="hidden" name="p3" value="internet">
+                <input type="hidden" name="p1" value="agua" id="pregunta1">
+                <input type="hidden" name="p2" value="rojo" id="pregunta2">
+                <input type="hidden" name="p3" value="internet" id="pregunta3">
 
             </form>
         </div>
@@ -162,17 +162,17 @@
 </div>
 <div class="form">
 <h2>1. ¿Que servicio te ofrece Engie?</h2>
-<p><input type="radio" name="p1" value="agua" class="radio" checked>Agua potable</p>
-<p><input type="radio" name="p1" value="energia" class="radio">Energía eléctrica</p>
-<p><input type="radio" name="p1" value="gas" class="radio">Gas natural</p>
+<p><input type="radio" name="p1" value="agua" class="radio p1" checked >Agua potable</p>
+<p><input type="radio" name="p1" value="energia" class="radio p1" >Energía eléctrica</p>
+<p><input type="radio" name="p1" value="gas" class="radio p1" >Gas natural</p>
 <h2>2. ¿De qué color es el logo de ENGIE?</h2>
-<p><input type="radio" name="P2" value="rojo" class="radio" checked>Rojo</p>
-<p><input type="radio" name="p2" value="azul" class="radio">Azul</p>
-<p><input type="radio" name="p2" value="amarillo" class="radio">Amarillo</p>
+<p><input type="radio" name="p2" value="rojo" class="radio p2" checked>Rojo</p>
+<p><input type="radio" name="p2" value="azul" class="radio p2">Azul</p>
+<p><input type="radio" name="p2" value="amarillo" class="radio p2">Amarillo</p>
 <h2>3. ¿El gas natural nos sirve para?</h2>
-<p><input type="radio" name="p3" value="internet" class="radio" checked>Navegar en internet</p>
-<p><input type="radio" name="p3" value="cocinar" class="radio">Cocinar en la estufa</p>
-<p><input type="radio" name="p3" value="cargar" class="radio">Cargar el móvil</p>
+<p><input type="radio" name="p3" value="internet" class="radio p3" checked>Navegar en internet</p>
+<p><input type="radio" name="p3" value="cocinar" class="radio p3">Cocinar en la estufa</p>
+<p><input type="radio" name="p3" value="cargar" class="radio p3">Cargar el móvil</p>
 <a class="btn" href="#" id="guardaTodo">Enviar</a>
 <div class="clearfix"></div>
 <br>
