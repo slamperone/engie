@@ -46,9 +46,11 @@
 
                 <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number" data-parsley-minlength="9" value="{{ old('cliente') }}"></p>
 
-                <p class="space"><br></p>
+                <p>¿Por qué medio te enteraste? : <br> <input type="text" name="medio" required="" value="{{ old('cliente') }}" data-parsley-length="[3, 20]"></p>
 
-                <p>Teléfono: <br> <input type="text" name="telefono" required="" value="{{ old('telefono') }}" data-parsley-minlength="10"></p>
+                <p>Teléfono Fijo: <br> <input type="text" name="telefono" required="" value="{{ old('telefono') }}" data-parsley-minlength="10"></p>
+
+                <p>Teléfono móvil: <br> <input type="text" name="cel" required="" value="{{ old('telefono') }}" data-parsley-minlength="10"></p>
 
                 <p>Correo electrónico: <br> <input name="correo" required="" type="email" data-parsley-type="email" value="{{ old('correo') }}"></p>
 
@@ -128,6 +130,8 @@
 
                 <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5" data-parsley-type="number" data-parsley-minlength="5" value="{{ old('cp') }}"></p>
 
+                <p class="space"></p>
+
 
   <p class="che">
     <input type="checkbox" class="radio" id="titular" name="titular" value="yes" required="">
@@ -162,18 +166,19 @@
 </div>
 <div class="form">
 <h2>1. ¿Que servicio te ofrece Engie?</h2>
-<p><input type="radio" name="p1" value="agua" class="radio p1" checked >Agua potable</p>
-<p><input type="radio" name="p1" value="energia" class="radio p1" >Energía eléctrica</p>
-<p><input type="radio" name="p1" value="gas" class="radio p1" >Gas natural</p>
+<p><label><input type="radio" name="pr1" value="agua" class="radio p1" checked >Agua potable</label></p>
+<p><label><input type="radio" name="pr1" value="energia" class="radio p1" >Energía eléctrica</label></p>
+<p><label><input type="radio" name="pr1" value="gas" class="radio p1" >Gas natural</label></p>
 <h2>2. ¿De qué color es el logo de ENGIE?</h2>
-<p><input type="radio" name="p2" value="rojo" class="radio p2" checked>Rojo</p>
-<p><input type="radio" name="p2" value="azul" class="radio p2">Azul</p>
-<p><input type="radio" name="p2" value="amarillo" class="radio p2">Amarillo</p>
+<p><label><input type="radio" name="pr2" value="rojo" class="radio p2" checked>Rojo</label></p>
+<p><label><input type="radio" name="pr2" value="azul" class="radio p2">Azul</label></p>
+<p><label><input type="radio" name="pr2" value="amarillo" class="radio p2">Amarillo</label></p>
 <h2>3. ¿El gas natural nos sirve para?</h2>
-<p><input type="radio" name="p3" value="internet" class="radio p3" checked>Navegar en internet</p>
-<p><input type="radio" name="p3" value="cocinar" class="radio p3">Cocinar en la estufa</p>
-<p><input type="radio" name="p3" value="cargar" class="radio p3">Cargar el móvil</p>
-<a class="btn" href="#" id="guardaTodo">Enviar</a>
+<p><label><input type="radio" name="pr3" value="internet" class="radio p3" checked>Navegar en internet</label></p>
+<p><label><input type="radio" name="pr3" value="cocinar" class="radio p3">Cocinar en la estufa</label></p>
+<p><label><input type="radio" name="pr3" value="cargar" class="radio p3">Cargar el móvil</label></p>
+<a class="btn" href="javascript:document.forms[0].submit()" id="guardaTodo">Enviar</a>
+
 <div class="clearfix"></div>
 <br>
 <a class="btnClose" href="#" rel="modal:close">Close</a>
@@ -181,4 +186,60 @@
 <div class="clearfix"></div>
 </div>
 </div>
+
+
+<div id="gracias" class="modal">
+
+<div class="title">
+<h2>¡Felicidades!</h2>
+<div class="line"></div>
+</div>
+
+@if ( isset($sailda) && $salida == 'exito' )
+
+<p>Tu registro ha sido éxitoso</p>
+
+<div class="clearfix"></div>
+
+<p> tu número de folio es {{ $folio }}</p>
+
+@endif
+
+
+
+@if ( isset($sailda) && $salida == 'error' )
+
+<p>Vaya, algo ha salido mal, por favor reintentalo más tarde </p>
+
+<div class="clearfix"></div>
+
+@endif
+
+
+
+<div class="clearfix"></div>
+<br>
+<a class="btnClose" href="#" rel="modal:close">Close</a>
+
+<div class="clearfix"></div>
+</div>
+</div>
+
+
+             @if ( isset($salida) )
+<script type="text/javascript">
+             $("#gracias").modal({
+                    escapeClose: false,
+                    clickClose: false,
+                    showClose: false,
+                    fadeDuration: 100
+              });
+
+
+             $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+</script>
+            @endif
+
 

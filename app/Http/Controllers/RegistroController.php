@@ -61,9 +61,9 @@ class RegistroController extends Controller
         $client->create($request->all());
 
         if ($client){
-            $salida = 'Éxito al guardar';
+            $salida = 'exito';
         }else{
-            $salida = 'Error al guardar';
+            $salida = 'error';
         }
 
 
@@ -72,6 +72,7 @@ class RegistroController extends Controller
         $datos = array(
             'sucess' => 'true',
             'guardado' => $salida,
+            'folio' => md5($client->id),
         );
 
         $receptor = array(

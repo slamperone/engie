@@ -115,32 +115,45 @@ $(function () {
     $('.p1').click(function() {
         if ($('.p1').is(":checked"))
             {
-            console.log($(this).val());
+            
+            valor = $(this).val();
 
-            $('#preguta1').val() = $('.p1').val($(this).val());
+            //console.log(valor);
+
+            $('input[name=p1]').val(valor);
+
+            //console.log($('input[name=p1]').val());
+
             }
     });
 
     $('.p2').click(function() {
         if ($('.p2').is(":checked"))
             {
-            console.log($(this).val());
-            $('#preguta1').val() = $('.p2').val($(this).val());
+            
+            valor = $(this).val();
+
+            $('input[name=p2]').val(valor);
+
             }
     });
 
     $('.p3').click(function() {
         if ($('.p3').is(":checked"))
             {
-            console.log($(this).val());
-            $('#preguta1').val() = $('.p3').val($(this).val());
+
+            valor = $(this).val();
+
+            $('input[name=p3]').val(valor);
 
             }
     });
 
-    $('#guardaTodo').click(function() {
-        $('registro').submit();
-    });
+    /*$('#guardaTodo').click(function(e) {
+        e.preventDefault();
+        console.log('ola bb')
+        $('#registro').submit();
+    });*/
 
 
 });  

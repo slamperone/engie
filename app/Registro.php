@@ -9,7 +9,7 @@ class Registro extends Model
     //
      protected $fillable = [
 
-        'nombre','apellido','cliente','telefono','correo','estado','cp','titular','p1','p2','p3'
+        'nombre','apellido','cliente','telefono','correo','estado','cp','titular','p1','p2','p3','medio','cel',
 
     ];
 }
