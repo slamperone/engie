@@ -59,69 +59,69 @@
 
 <option value="">Todo México</option>
 
-<option value="1">Aguascalientes</option>
+<option value="Aguascalientes">Aguascalientes</option>
 
-<option value="2">Baja California</option>
+<option value="Baja California">Baja California</option>
 
-<option value="3">Baja California Sur</option>
+<option value="Baja California Sur">Baja California Sur</option>
 
-<option value="4">Campeche</option>
+<option value="Campeche">Campeche</option>
 
-<option value="5">Coahuila de Zaragoza</option>
+<option value="Coahuila">Coahuila de Zaragoza</option>
 
-<option value="6">Colima</option>
+<option value="Colima">Colima</option>
 
-<option value="7">Chiapas</option>
+<option value="Chiapas">Chiapas</option>
 
-<option value="8">Chihuahua</option>
+<option value="Chihuahua">Chihuahua</option>
 
-<option value="9">Distrito Federal</option>
+<option value="CDMX">Ciudad de México</option>
 
-<option value="10">Durango</option>
+<option value="Durango">Durango</option>
 
-<option value="11">Guanajuato</option>
+<option value="Edomex">Estado de México</option>
 
-<option value="12">Guerrero</option>
+<option value="Guanajuato">Guanajuato</option>
 
-<option value="13">Hidalgo</option>
+<option value="Guerrero">Guerrero</option>
 
-<option value="14">Jalisco</option>
+<option value="Hidalgo">Hidalgo</option>
 
-<option value="15">México</option>
+<option value="Jalisco">Jalisco</option>
 
-<option value="16">Michoacán de Ocampo</option>
+<option value="Michoacan">Michoacán de Ocampo</option>
 
-<option value="17">Morelos</option>
+<option value="Morelos">Morelos</option>
 
-<option value="18">Nayarit</option>
+<option value="Nayarit">Nayarit</option>
 
-<option value="19">Nuevo León</option>
+<option value="Nuevo León">Nuevo León</option>
 
-<option value="20">Oaxaca</option>
+<option value="Oaxaca">Oaxaca</option>
 
-<option value="21">Puebla</option>
+<option value="Puebla">Puebla</option>
 
-<option value="22">Querétaro</option>
+<option value="Querétaro">Querétaro</option>
 
-<option value="23">Quintana Roo</option>
+<option value="Quintana Roo">Quintana Roo</option>
 
-<option value="24">San Luis Potosí</option>
+<option value="San Luis Potosí">San Luis Potosí</option>
 
-<option value="25">Sinaloa</option>
+<option value="Sinaloa">Sinaloa</option>
 
-<option value="26">Sonora</option>
+<option value="Sonora">Sonora</option>
 
-<option value="27">Tabasco</option>
+<option value="Tabasco">Tabasco</option>
 
-<option value="28">Tamaulipas</option>
+<option value="Tamaulipas">Tamaulipas</option>
 
-<option value="29">Tlaxcala</option>
+<option value="Tlaxcala">Tlaxcala</option>
 
-<option value="30">Veracruz de Ignacio de la Llave</option>
+<option value="Veracruz">Veracruz de Ignacio de la Llave</option>
 
-<option value="31">Yucatán</option>
+<option value="Yucatán">Yucatán</option>
 
-<option value="32">Zacatecas</option>
+<option value="Zacatecas">Zacatecas</option>
 
 </select>
 </p>
@@ -129,15 +129,18 @@
                 <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5" data-parsley-type="number" data-parsley-minlength="5" value="{{ old('cp') }}"></p>
 
 
-                    <p>
+  <p class="che">
     <input type="checkbox" class="radio" id="titular" name="titular" value="yes" required="">
     <label class="form-check-label" for="titular">&nbsp;¿Es usted titular de la cuenta?</label>
-
                     </p>
 
-                <p><input type="checkbox" class="radio" id="condiciones" name="condiciones" value="yes" required="">
-    <label class="form-check-label" for="titular">&nbsp; <a href="{{url('aviso-de-privacidad') }}" target="_blank">  Acepto Aviso de Privacidad</a></label></p>
+    <p class="che">
+                  <input type="checkbox" class="radio" id="condiciones" name="condiciones" value="yes" required="">
+    <label class="form-check-label" for="titular">&nbsp; Acepto <a href="{{url('aviso-de-privacidad') }}" target="_blank">Aviso de Privacidad</a></label></p>
 
+                    
+
+                
                 <input type="submit" name="" value="Participa" class="btn">
 
             </form>
