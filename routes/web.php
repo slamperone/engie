@@ -34,8 +34,8 @@ Route::get('/concurso', function () {
     return view('concurso');
 });
 
-Route::get('/terminos-y-condiciones', function () {
-    return view('terminos');
+Route::get('/aviso-de-privacidad', function () {
+    return view('aviso');
 });
 
 Route::get('/clear-cache', function() {

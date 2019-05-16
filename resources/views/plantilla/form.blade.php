@@ -44,7 +44,7 @@
 
                 <p>Apellido: <br> <input type="text" name="apellido" required="" data-parsley-length="[3, 20]" value="{{ old('apellido') }}"></p>
 
-                <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number" data-parsley-minlength="10" value="{{ old('cliente') }}"></p>
+                <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number" data-parsley-minlength="9" value="{{ old('cliente') }}"></p>
 
                 <p class="space"><br></p>
 
@@ -131,12 +131,12 @@
 
                     <p>
     <input type="checkbox" class="radio" id="titular" name="titular" value="yes" required="">
-    <label class="form-check-label" for="titular">¿Es usted titular de la cuenta?</label>
+    <label class="form-check-label" for="titular">&nbsp;¿Es usted titular de la cuenta?</label>
 
                     </p>
 
                 <p><input type="checkbox" class="radio" id="condiciones" name="condiciones" value="yes" required="">
-    <label class="form-check-label" for="titular"><a href="{{url('terminos-y-condiciones') }}" target="_blank">Acepto términos y condiciones</a></label></p>
+    <label class="form-check-label" for="titular">&nbsp; <a href="{{url('aviso-de-privacidad') }}" target="_blank">  Acepto Aviso de Privacidad</a></label></p>
 
                 <input type="submit" name="" value="Participa" class="btn">
 

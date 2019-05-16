@@ -7,7 +7,7 @@
 	@include('plantilla.canvas')
 <div class="faqs">
 <div class="title">
-<h2>Términos y condiciones</h2>
+<h2>Aviso de privacidad</h2>
 </div>
 <div class="content">
 <h2>Concurso "Engie te premia"</h2>
