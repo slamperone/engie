@@ -159,6 +159,20 @@
   height: 25px!important;
 }
 
+#encuesta .form .btnclose {
+  width: 90%;
+  float: left;
+  padding: 15px;
+  text-align: center;
+  background-color: #c10808;
+  color: #ffffff;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+}
 
 
 
