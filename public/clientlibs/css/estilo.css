@@ -159,7 +159,7 @@
   height: 25px!important;
 }
 
-#encuesta .form .btnclose {
+#encuesta .form .btnclose, #gracias .form .btnclose {
   width: 90%;
   float: left;
   padding: 15px;

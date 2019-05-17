@@ -417,10 +417,10 @@ header .content .content-wrapper ul li.btn a:hover {
   text-decoration: none;
   display: none;
 }
-#encuesta .title {
+#encuesta .title, #gracias .title {
   text-align: center;
 }
-#encuesta .title h2 {
+#encuesta .title h2, #gracias .title h2 {
   font-size: 54px;
   line-height: 60px;
   font-weight: normal;
@@ -428,25 +428,25 @@ header .content .content-wrapper ul li.btn a:hover {
   padding-bottom: 0;
   margin-bottom: 10px;
 }
-#encuesta .title .line {
+#encuesta .title .line, #gracias .title .line {
   width: 150px;
   height: 5px;
   background-color: #e62d8f;
   margin: 0 auto 30px auto;
 }
-#encuesta .form {
+#encuesta .form, #gracias .form {
   background-color: #ffffff;
   padding: 30px 50px;
   border-radius: 20px;
 }
-#encuesta .form h2 {
+#encuesta .form h2, #gracias .form h2 {
   color: #666666;
   font-size: 18px;
 }
-#encuesta .form p {
+#encuesta .form p, #gracias .form p {
   color: #666666;
 }
-#encuesta .form .btn {
+#encuesta .form .btn, #gracias .form .btn {
   width: 90%;
   float: left;
   padding: 15px;

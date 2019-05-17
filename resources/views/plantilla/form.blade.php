@@ -181,7 +181,7 @@
 
 <div class="clearfix"></div>
 <br>
-<a class="btnClose" href="#" rel="modal:close">Close</a>
+<a class="btnClose" href="#" rel="modal:close">Cerrar</a>
 
 <div class="clearfix"></div>
 </div>
@@ -195,19 +195,20 @@
 <div class="line"></div>
 </div>
 
-@if ( isset($sailda) && $salida == 'exito' )
+@if ( !empty($datos['guardado']) && $datos['guardado'] == 'exito' )
+
 
 <p>Tu registro ha sido éxitoso</p>
 
 <div class="clearfix"></div>
 
-<p> tu número de folio es {{ $folio }}</p>
+<p> tu número de folio es {{ $datos['folio'] }}</p>
 
 @endif
 
 
 
-@if ( isset($sailda) && $salida == 'error' )
+@if ( !empty($datos['guardado']) && $datos['guardado'] == 'error' )
 
 <p>Vaya, algo ha salido mal, por favor reintentalo más tarde </p>
 
@@ -219,14 +220,28 @@
 
 <div class="clearfix"></div>
 <br>
-<a class="btnClose" href="#" rel="modal:close">Close</a>
+<a class="btnClose" href="#" rel="modal:close">Cerrar</a>
 
 <div class="clearfix"></div>
 </div>
 </div>
 
 
-             @if ( isset($salida) )
+        @if ( isset($errors) )
+        
+        <script type="text/javascript">
+
+             $('html, body').stop().animate({
+                scrollTop: $('.form-home').offset().top
+            }, 1000);
+
+        </script>
+        @endif
+
+
+             @if(isset($datos))
+             
+
 <script type="text/javascript">
              $("#gracias").modal({
                     escapeClose: false,

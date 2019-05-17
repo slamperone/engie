@@ -27,8 +27,8 @@
 
         <!-- B A S E -->
         <link rel="stylesheet" href="{{ asset('clientlibs/fontawesome/v.4.7.0/font-awesome.min.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('clientlibs/css/styles.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('clientlibs/css/estilo.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('estilos/css/styles.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('estilos/css/estilo.css') }}"/>
         <script src="{{ asset('clientlibs/scripts/header/script.js') }}"></script>
 
     </head>
