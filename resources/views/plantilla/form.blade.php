@@ -12,7 +12,7 @@
 
     <div class="content">
         <div class="title">
-            <h2>Suscríbete y participa</h2>
+            <h2>Participa para ganar</h2>
             <div class="line"></div>
         </div>
         <div class="form">
@@ -74,69 +74,20 @@
 
 <option value="">Todo México</option>
 
-<option value="Aguascalientes">Aguascalientes</option>
-
-<option value="Baja California">Baja California</option>
-
-<option value="Baja California Sur">Baja California Sur</option>
-
-<option value="Campeche">Campeche</option>
-
-<option value="Coahuila">Coahuila de Zaragoza</option>
-
-<option value="Colima">Colima</option>
-
-<option value="Chiapas">Chiapas</option>
-
-<option value="Chihuahua">Chihuahua</option>
-
-<option value="CDMX">Ciudad de México</option>
-
-<option value="Durango">Durango</option>
-
 <option value="Edomex">Estado de México</option>
 
-<option value="Guanajuato">Guanajuato</option>
-
-<option value="Guerrero">Guerrero</option>
-
-<option value="Hidalgo">Hidalgo</option>
-
 <option value="Jalisco">Jalisco</option>
-
-<option value="Michoacan">Michoacán de Ocampo</option>
-
-<option value="Morelos">Morelos</option>
-
-<option value="Nayarit">Nayarit</option>
-
-<option value="Nuevo Leon">Nuevo León</option>
-
-<option value="Oaxaca">Oaxaca</option>
 
 <option value="Puebla">Puebla</option>
 
 <option value="Queretaro">Querétaro</option>
 
-<option value="Quintana Roo">Quintana Roo</option>
+<option value="Tampico">Tampico</option>
 
-<option value="San Luis Potosi">San Luis Potosí</option>
+<option value="Matamoros">Matamoros</option>
 
-<option value="Sinaloa">Sinaloa</option>
+<option value="Reynosa">Reynosa</option>
 
-<option value="Sonora">Sonora</option>
-
-<option value="Tabasco">Tabasco</option>
-
-<option value="Tamaulipas">Tamaulipas</option>
-
-<option value="Tlaxcala">Tlaxcala</option>
-
-<option value="Veracruz">Veracruz de Ignacio de la Llave</option>
-
-<option value="Yucatan">Yucatán</option>
-
-<option value="Zacatecas">Zacatecas</option>
 
 </select>
 </p>
@@ -148,7 +99,7 @@
 
   <p class="che">
     <input type="checkbox" class="radio" id="titular" name="titular" value="yes" required="">
-    <label class="form-check-label" for="titular">&nbsp;¿Es usted titular de la cuenta?</label>
+    <label class="form-check-label" for="titular">&nbsp;¿Eres titular de la cuenta?</label>
                     </p>
 
     <p class="che">
@@ -178,7 +129,7 @@
 <div class="line"></div>
 </div>
 <div class="form">
-<h2>1. ¿Que servicio te ofrece Engie?</h2>
+<h2>1. ¿Qué servicio te ofrece ENGIE?</h2>
 <p><label><input type="radio" name="pr1" value="agua" class="radio p1" checked >Agua potable</label></p>
 <p><label><input type="radio" name="pr1" value="energia" class="radio p1" >Energía eléctrica</label></p>
 <p><label><input type="radio" name="pr1" value="gas" class="radio p1" >Gas natural</label></p>
@@ -186,7 +137,7 @@
 <p><label><input type="radio" name="pr2" value="rojo" class="radio p2" checked>Rojo</label></p>
 <p><label><input type="radio" name="pr2" value="azul" class="radio p2">Azul</label></p>
 <p><label><input type="radio" name="pr2" value="amarillo" class="radio p2">Amarillo</label></p>
-<h2>3. ¿El gas natural nos sirve para?</h2>
+<h2>3. El gas natural nos sirve para</h2>
 <p><label><input type="radio" name="pr3" value="internet" class="radio p3" checked>Navegar en internet</label></p>
 <p><label><input type="radio" name="pr3" value="cocinar" class="radio p3">Cocinar en la estufa</label></p>
 <p><label><input type="radio" name="pr3" value="cargar" class="radio p3">Cargar el móvil</label></p>
@@ -270,13 +221,3 @@
             }, 1000);
 </script>
             @endif
-
-
-<script type="text/javascript">
-             $("#gracias").modal({
-                    escapeClose: false,
-                    clickClose: false,
-                    showClose: false,
-                    fadeDuration: 100
-              });
-</script>
