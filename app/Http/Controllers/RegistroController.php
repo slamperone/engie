@@ -46,19 +46,23 @@ class RegistroController extends Controller
             'cliente' => 'required|unique:registros',
             'telefono' => 'required|numeric',
             'correo'    => 'required|email|unique:registros',
-            'estado' => 'required|alpha_num|max:40',
+            'estado' => 'required|max:40',
             'cp' => 'required|numeric|max:99999',
             'titular' => 'required',
             'p1' => 'required',
             'p2' => 'required',
-            'p3' => 'required'
+            'p3' => 'required',
+            'medio' => 'required',
         ]);
  
         if ($v->fails()){
             return redirect()->back()->withInput()->withErrors($v->errors());
         }
+
+        $request->request->add(['folio' => $this->foliadora()]);
+
         
-        $client->create($request->all());
+        $client->create(($request->all()));
 
         if ($client){
             $salida = 'exito';
@@ -72,13 +76,13 @@ class RegistroController extends Controller
         $datos = array(
             'sucess' => 'true',
             'guardado' => $salida,
-            'folio' => md5($client->id),
+            'folio' => $client->folio,
         );
 
         $receptor = array(
             'nombre' => $request->input('nombre'),
             'correo' => $request->input('correo'),
-            'folio' => md5($client->id),
+            'folio' => $client->folio,
         );
 
         
@@ -137,5 +141,14 @@ class RegistroController extends Controller
     public function destroy(Registro $registro)
     {
         //
+    }
+
+
+    public function foliadora(){
+        $t0 = rand(0, 999);
+        $t1 = rand(100, 999);
+        $t2 = rand(50, 999);
+
+        return $t0.$t1."-".$t2;
     }
 }

@@ -159,7 +159,7 @@
   height: 25px!important;
 }
 
-#encuesta .form .btnclose, #gracias .form .btnclose {
+#encuesta .form .btnclose, #gracias .btnclose {
   width: 90%;
   float: left;
   padding: 15px;
@@ -174,5 +174,40 @@
   text-decoration: none;
 }
 
+.faqs .content ul li{
+color: #666666;
 
+}
+
+@media (max-width: 640px){
+ 
+#encuesta .form, #gracias .form {
+
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 20px;
+
+}
+
+
+#encuesta .form h2, #gracias .form h2 {
+
+    color: #666666;
+    font-size: 13px;
+
+}
+
+
+#encuesta .title h2, #gracias .title h2 {
+
+    font-size: 45px;
+    line-height: 37px;
+    font-weight: normal;
+    color: #666666;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+
+}
+ 
+}
 

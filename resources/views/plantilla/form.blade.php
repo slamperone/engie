@@ -48,7 +48,7 @@
 
                 <p>¿Por qué medio te enteraste? : <br> 
 
-                <select name="estado" class="slcEstados" required="">
+                <select name="medio" class="slcEstados" required="">
                   <option value="">elige una</option>
                   <option value="Radio">Radio</option>
                   <option value="Facebook">Facebook</option>
@@ -56,7 +56,7 @@
                   <option value="Emailing">Emailing</option>
                   <option value="Agencias">Agencias ENGIE</option>
                   <option value="Sitio Web">Sitio web ENGIE México</option>
-                  <option value="">Otro</option>
+                  <option value="Otro">Otro</option>
                 </select>  
 
                 </p>
@@ -208,14 +208,15 @@
 <div class="line"></div>
 </div>
 
+
 @if ( !empty($datos['guardado']) && $datos['guardado'] == 'exito' )
 
 
-<p>Tu registro ha sido éxitoso</p>
+<p>Tu registro ha sido exitoso</p>
 
 <div class="clearfix"></div>
 
-<p> tu número de folio es {{ $datos['folio'] }}</p>
+<p> Tu número de folio es <br />{{ $datos['folio'] }}</p>
 
 @endif
 
@@ -265,9 +266,17 @@
 
 
              $('html, body').stop().animate({
-                scrollTop: target.offset().top
+                scrollTop: $('.form-home').offset().top
             }, 1000);
 </script>
             @endif
 
 
+<script type="text/javascript">
+             $("#gracias").modal({
+                    escapeClose: false,
+                    clickClose: false,
+                    showClose: false,
+                    fadeDuration: 100
+              });
+</script>
