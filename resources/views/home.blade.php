@@ -8,8 +8,6 @@
 
 	@include('plantilla.proximamente')
 
-	@include('plantilla.feed')
-
 	@include('plantilla.form')
 
 	@include('plantilla.footer')
