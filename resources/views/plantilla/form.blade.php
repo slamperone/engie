@@ -46,7 +46,20 @@
 
                 <p>Número de cliente: <br> <input type="text" name="cliente" required="" data-parsley-type="number" data-parsley-minlength="9" value="{{ old('cliente') }}"></p>
 
-                <p>¿Por qué medio te enteraste? : <br> <input type="text" name="medio" required="" value="{{ old('cliente') }}" data-parsley-length="[3, 20]"></p>
+                <p>¿Por qué medio te enteraste? : <br> 
+
+                <select name="estado" class="slcEstados" required="">
+                  <option value="">elige una</option>
+                  <option value="Radio">Radio</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Factura">Factura</option>
+                  <option value="Emailing">Emailing</option>
+                  <option value="Agencias">Agencias ENGIE</option>
+                  <option value="Sitio Web">Sitio web ENGIE México</option>
+                  <option value="">Otro</option>
+                </select>  
+
+                </p>
 
                 <p>Teléfono Fijo: <br> <input type="text" name="telefono" required="" value="{{ old('telefono') }}" data-parsley-minlength="10"></p>
 
