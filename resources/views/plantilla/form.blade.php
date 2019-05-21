@@ -159,7 +159,7 @@
 </div>
 
 
-@if ( !empty($datos['guardado']) && $datos['guardado'] == 'exito' )
+@if ( isset($datos['guardado']) && $datos['guardado'] == 'exito' )
 
 
 <p>Tu registro ha sido exitoso</p>
@@ -172,7 +172,7 @@
 
 
 
-@if ( !empty($datos['guardado']) && $datos['guardado'] == 'error' )
+@if ( isset($datos['guardado']) && $datos['guardado'] == 'error' )
 
 <p>Vaya, algo ha salido mal, por favor reintentalo más tarde </p>
 
@@ -191,12 +191,12 @@
 </div>
 
 
-        @if ( isset($errors) )
+        @if ( count( $errors ) > 0 )
         
         <script type="text/javascript">
 
              $('html, body').stop().animate({
-                scrollTop: $('.form-home').offset().top
+                scrollTop: $('.form-home').offset().top-105
             }, 1000);
 
         </script>
@@ -216,7 +216,7 @@
 
 
              $('html, body').stop().animate({
-                scrollTop: $('.form-home').offset().top+105
+                scrollTop: $('.form-home').offset().top-105
             }, 1000);
 </script>
             @endif
