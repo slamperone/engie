@@ -59,7 +59,9 @@ class RegistroController extends Controller
             return redirect()->back()->withInput()->withErrors($v->errors());
         }
 
-        $request->request->add(['folio' => $this->foliadora()]);
+        $f = $this->foliadora();
+
+        $request->request->add(['folio' => $f]);
 
         
         $client->create(($request->all()));
@@ -76,13 +78,13 @@ class RegistroController extends Controller
         $datos = array(
             'sucess' => 'true',
             'guardado' => $salida,
-            'folio' => $client->folio,
+            'folio' => $f,
         );
 
         $receptor = array(
             'nombre' => $request->input('nombre'),
             'correo' => $request->input('correo'),
-            'folio' => $client->folio,
+            'folio' => $f,
         );
 
         

@@ -91,8 +91,7 @@
 
 </select>
 </p>
-
-                <p>Código postal: <br> <input type="text" name="cp" required="" minlength="5" data-parsley-type="number" data-parsley-minlength="5" value="{{ old('cp') }}"></p>
+                <p>Código postal: <br> <input type="text" maxlength="5" name="cp" required="" minlength="5" data-parsley-type="number" data-parsley-minlength="5" value="{{ old('cp') }}"></p>
 
                 <p class="space"></p>
 
@@ -217,7 +216,7 @@
 
 
              $('html, body').stop().animate({
-                scrollTop: $('.form-home').offset().top
+                scrollTop: $('.form-home').offset().top+105
             }, 1000);
 </script>
             @endif
