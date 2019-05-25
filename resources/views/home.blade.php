@@ -13,5 +13,20 @@
 	@include('plantilla.footer')
 	
 
+<div id="bienvenida" class="modal">
+
+		<img src="{{ asset('clientlibs/img/bienvenido.png') }}" width="100%" alt="">
+		
+</div>
+
+
+<script type="text/javascript">
+	
+$("#bienvenida").modal({
+                    fadeDuration: 100
+              });
+
+
+</script>
 @endsection
 

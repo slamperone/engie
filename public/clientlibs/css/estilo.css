@@ -211,3 +211,99 @@ color: #666666;
  
 }
 
+
+/*
+    Parche 20 mayo
+*/
+
+
+.stage-home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stage-home .left {
+  width: 48%;
+  float: left;
+}
+.stage-home .left img {
+  width: 100%;
+  height: auto;
+}
+.stage-home .right {
+  width: 50%;
+  float: right;
+}
+.stage-home .right .box-1 {
+  font-size: 50px;
+  color: #006583;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.stage-home .right .box-2 {
+  font-size: 85px;
+  color: #01aef0;
+  text-align: right;
+  font-weight: bold;
+}
+.stage-home .right .box-3 {
+  font-size: 65px;
+  color: #ec3a98;
+  text-align: right;
+  font-weight: bold;
+}
+.stage-home .right .box-4 {
+  width: 100%;
+}
+.stage-home .right .box-4 img {
+  width: 100%;
+  height: auto;
+}
+.stage-home .right .box-5 {
+  font-size: 20px;
+  color: #01aef0;
+  text-align: right;
+  margin-top: 30px;
+}
+.stage-home .right .box-6 {
+  font-size: 11px;
+  color: #01aef0;
+  text-align: right;
+}
+@media (max-width: 1080px) {
+  .stage-home .right .box-1 {
+    font-size: 30px;
+  }
+  .stage-home .right .box-2 {
+    font-size: 50px;
+  }
+  .stage-home .right .box-3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .stage-home .left {
+    width: 100%;
+  }
+  .stage-home .right {
+    width: 90%;
+    padding: 5%;
+  }
+  .stage-home .right .box-1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  .stage-home .right .box-2 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .stage-home .right .box-3 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .stage-home .right .box-5,
+  .stage-home .right .box-6 {
+    text-align: center;
+  }
+}
