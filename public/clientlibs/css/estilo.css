@@ -212,11 +212,20 @@ color: #666666;
 }
 
 
-/*
-    Parche 20 mayo
-*/
+
+/* Nueva seccion en texto pal jom */ 
 
 
+@font-face {
+  font-family: "ClanOt-Bold";
+  src: url("fonts/ClanOt-Bold.eot");
+  src: url("fonts/ClanOt-Bold.eot?#amocristalab") format("embedded-opentype"), url("fonts/ClanOt-Bold.woff") format("woff"), url("fonts/ClanOt-Bold.ttf") format("truetype"), url("fonts/ClanOt-Bold.svg#IDdelafuente") format("svg");
+}
+@font-face {
+  font-family: "ClanOt-Medium";
+  src: url("fonts/ClanOt-Medium.eot");
+  src: url("fonts/ClanOt-Medium.eot?#amocristalab") format("embedded-opentype"), url("fonts/ClanOt-Medium.woff") format("woff"), url("fonts/ClanOt-Medium.ttf") format("truetype"), url("fonts/ClanOt-Medium.svg#IDdelafuente") format("svg");
+}
 .stage-home {
   max-width: 1200px;
   margin: 0 auto;
@@ -234,6 +243,7 @@ color: #666666;
   float: right;
 }
 .stage-home .right .box-1 {
+  font-family: "ClanOt-Bold";
   font-size: 50px;
   color: #006583;
   text-align: right;
@@ -241,18 +251,21 @@ color: #666666;
   margin-top: 50px;
 }
 .stage-home .right .box-2 {
+  font-family: "ClanOt-Bold";
   font-size: 85px;
   color: #01aef0;
   text-align: right;
   font-weight: bold;
 }
 .stage-home .right .box-3 {
+  font-family: "ClanOt-Bold";
   font-size: 65px;
   color: #ec3a98;
   text-align: right;
   font-weight: bold;
 }
 .stage-home .right .box-4 {
+  font-family: "ClanOt-Bold";
   width: 100%;
 }
 .stage-home .right .box-4 img {
@@ -260,12 +273,17 @@ color: #666666;
   height: auto;
 }
 .stage-home .right .box-5 {
+  font-family: "ClanOt-Medium";
   font-size: 20px;
   color: #01aef0;
   text-align: right;
   margin-top: 30px;
 }
+.stage-home .right .box-5 b {
+  font-size: 26px;
+}
 .stage-home .right .box-6 {
+  font-family: "ClanOt-Medium";
   font-size: 11px;
   color: #01aef0;
   text-align: right;
@@ -306,4 +324,9 @@ color: #666666;
   .stage-home .right .box-6 {
     text-align: center;
   }
+}
+
+.content-proximamente{
+    background: #FFF;
+    display: grid;
 }
