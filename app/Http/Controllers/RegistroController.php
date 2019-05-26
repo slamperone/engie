@@ -43,7 +43,7 @@ class RegistroController extends Controller
             
             'nombre' => 'required|alpha_num|max:40',
             'apellido' => 'required|alpha_num|max:40',
-            'cliente' => 'required|unique:registros',
+            'cliente' => 'required|numeric|min:9',
             'telefono' => 'required|numeric',
             'correo'    => 'required|email|unique:registros',
             'estado' => 'required|max:40',
