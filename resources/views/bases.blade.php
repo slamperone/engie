@@ -168,8 +168,8 @@
 <p>El ganador deberá identificarse a través de algún documento oficial como Credencial IFE, INE vigente, Cartilla de Servicio Militar, Pasaporte y/o FM3 y/o FM2 según sea el caso; firmar recibo de conformidad y otorgar una copia de su documento oficial para el caso de personas físicas. Para personas morales, con cualquiera de las identificaciones señaladas anteriormente acompañada de copia certificada de su poder notarial.</p>
 <br>
 <h3>AVISO DEL CONCURSO EN MEDIOS</h3>
-<p>El concurso será dado a conocer a los usuarios a partir del 15 de abril del 2019 en diversos canales de comunicación de ENGIE: Sitio web: www.engiemexico.com</p>
-<p>Facturas del servicio de gas natural de ENGIE Canal de Youtube: <a href="http://www.youtube.com/channel/UCMlwCRIa77X9euKpmL2Q3MqQ">Ver aquí</a> </p>
+<p>El concurso será dado a conocer a los usuarios a partir del 15 de abril del 2019 en diversos canales de comunicación de ENGIE: <br /> Sitio web: www.engiemexico.com</p>
+<p>Facturas del servicio de gas natural de ENGIE </p>
 <p>Correo electrónico (mailing): por medio de la base de datos de los ClientesENGIE México.</p>
 <p>Redes Sociales de ENGIE: Página de Facebook ENGIE México</p>
 <p>Menciones en estaciones de radio de las localidades participantes: por medio de entrevistas.</p>

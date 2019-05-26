@@ -22,21 +22,9 @@
 
 <script type="text/javascript">
 	
-	/*
 $("#bienvenida").modal({
                     fadeDuration: 100
               });
-
-
-*/
-
-
-               $("#gracias").modal({
-                    escapeClose: false,
-                    clickClose: false,
-                    showClose: false,
-                    fadeDuration: 100
-        })
 
 
 </script>
