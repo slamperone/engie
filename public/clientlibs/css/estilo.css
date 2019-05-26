@@ -218,13 +218,13 @@ color: #666666;
 
 @font-face {
   font-family: "ClanOt-Bold";
-  src: url("fonts/ClanOt-Bold.eot");
-  src: url("fonts/ClanOt-Bold.eot?#amocristalab") format("embedded-opentype"), url("fonts/ClanOt-Bold.woff") format("woff"), url("fonts/ClanOt-Bold.ttf") format("truetype"), url("fonts/ClanOt-Bold.svg#IDdelafuente") format("svg");
+  src: url("../fonts/ClanOt-Bold.eot");
+  src: url("../fonts/ClanOt-Bold.eot?#amocristalab") format("embedded-opentype"), url("../fonts/ClanOt-Bold.woff") format("woff"), url("../fonts/ClanOt-Bold.ttf") format("truetype"), url("../fonts/ClanOt-Bold.svg#IDdelafuente") format("svg");
 }
 @font-face {
   font-family: "ClanOt-Medium";
-  src: url("fonts/ClanOt-Medium.eot");
-  src: url("fonts/ClanOt-Medium.eot?#amocristalab") format("embedded-opentype"), url("fonts/ClanOt-Medium.woff") format("woff"), url("fonts/ClanOt-Medium.ttf") format("truetype"), url("fonts/ClanOt-Medium.svg#IDdelafuente") format("svg");
+  src: url("../fonts/ClanOt-Medium.eot");
+  src: url("../fonts/ClanOt-Medium.eot?#amocristalab") format("embedded-opentype"), url("../fonts/ClanOt-Medium.woff") format("woff"), url("../fonts/ClanOt-Medium.ttf") format("truetype"), url("../fonts/ClanOt-Medium.svg#IDdelafuente") format("svg");
 }
 .stage-home {
   max-width: 1200px;
