@@ -3,6 +3,27 @@
 <!-- H E A D E R --->
 <!------------------>
 
+<!------------------>
+<!-- M o d a l  --->
+<!------------------>
+
+<div id="bienvenida" class="modal">
+
+    <img src="{{ asset('clientlibs/img/bienvenido.png') }}" width="100%" alt="">
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script type="text/javascript">
+    if(!Cookies.get('modalbienvenida')) {
+        $("#bienvenida").modal({
+            fadeDuration: 100
+        });
+        Cookies.set('modalbienvenida', true, { expires: 1});
+    } else {
+        console.log('Your modal won\'t show again as it\'s shown before.');
+    }
+</script>
+
 <header>
     <div class="content">
 
@@ -23,11 +44,7 @@
                     <li class="btn"><a href="{{url('/') }}">Inicio</a></li>
                     <!--li class="btn"><a href="{{url('instrucciones') }}">Instrucciones</a></li-->
 
-                    @if(Request::path() == '/' || Request::path() == '/concurso')
-                        <li class="btn"><a href="#" id="concurso">Concurso</a></li>
-                    @else
-                        <li class="btn"><a href="{{url('concurso') }}" id="concurso">Concurso</a></li>
-                    @endif    
+                  
                     
                     <li class="btn"><a href="{{url('premios') }}">Premios</a></li>
                     <li class="btn"><a href="{{url('bases') }}">Bases</a></li>

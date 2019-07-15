@@ -31,7 +31,8 @@ Route::get('/faqs', function () {
 });
 
 Route::get('/concurso', function () {
-    return view('concurso');
+    //return view('concurso');
+      return redirect('/premios');
 });
 
 Route::get('/aviso-de-privacidad', function () {

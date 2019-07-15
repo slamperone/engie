@@ -2,11 +2,25 @@
     <head>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="theme-color" content="#00adef" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="msapplication-navbutton-color" content="#00adef">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#00adef">
+        <meta name="description" content="¡Regístrate y gana hasta $20,000! ENGIE te premia">
+        <meta name="keywords" content="premios, engie, premia, mexico, gas, natural, concurso, 20000">
+        <meta name="author" lang="es" content="Engie" />
+        <meta property="og:site_name" content="Engie te premia" />
+        <meta property="og:title" content="Engie" />
+        <meta property="og:description" content="¡Regístrate y gana hasta $20,000! ENGIE te premia" />
+        <meta property="og:url" content="https://engietepremia.com.mx/" />
+        <meta property="og:image" content="https://engietepremia.com.mx/clientlibs/img/engie.png" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="578" />
+        <meta property="og:image:type" content="image/png" />
         <title>{{ config('app.name', 'Laravel') }} </title>
-        <link rel="icon" type="image/vnd.microsoft.icon" href="{{ asset('clientlibs/favicon.ico') }}"/>
-        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ asset('clientlibs/favicon.ico') }}"/>
+
 
 
         <!-- G N R L -->
@@ -38,18 +52,6 @@
                  @yield('content')
 
             </div>
-
-
-
-
-<!-- Modal Structure -->
-    <div class="modal fade" id="myModal" aria-hidden="true">
-
-        olabb
- </div>
-
-
-
 
 
 <script type="text/javascript">
@@ -157,6 +159,14 @@ $(function () {
 
 
 });  
-</script>            
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138366757-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138366757-1');
+</script>
     </body>
 </html>
