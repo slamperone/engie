@@ -6,7 +6,7 @@
 
 	@include('plantilla.canvas')
 
-	@include('plantilla.proximamente')
+	@include('plantilla.lista')
 
 
 	@include('plantilla.footer')

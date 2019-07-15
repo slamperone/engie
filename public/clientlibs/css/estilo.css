@@ -321,3 +321,18 @@ color: #666666;
     background: #FFF;
     display: grid;
 }
+
+
+.titulo{
+
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #00adef;
+    color: #FFF;
+}
+
+
+.col-md-4{
+  position: inherit;
+}

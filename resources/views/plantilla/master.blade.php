@@ -1,7 +1,9 @@
 <html xmlns="http://www.w3.org/1999/html">
     <head>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
         <meta name="theme-color" content="#00adef" />
@@ -16,6 +18,9 @@
         <meta property="og:description" content="¡Regístrate y gana hasta $20,000! ENGIE te premia" />
         <meta property="og:url" content="https://engietepremia.com.mx/" />
         <meta property="og:image" content="https://engietepremia.com.mx/clientlibs/img/engie.png" />
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="578" />
         <meta property="og:image:type" content="image/png" />
